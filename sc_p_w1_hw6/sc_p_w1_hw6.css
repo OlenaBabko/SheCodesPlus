@@ -1,0 +1,67 @@
+    body {
+        text-align: center;
+        font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+    }
+
+    header h1,
+    h2 {
+        font-size: 34px;
+    }
+
+    .workshop:hover {
+        font-style: italic;
+    }
+
+    h1 {
+        margin: 60px 0 0;
+        font-size: 34px;
+        line-height: 48px;
+    }
+
+    h2 {
+        color: #7F64E9;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+        padding: 0 0 24px;
+    }
+
+    p {
+        font-size: 18px;
+        font-size: 18px;
+        line-height: 28px;
+        font-family: PT Mono, monospace;
+        margin: 40px auto 40px auto;
+    }
+
+    button {
+        border-radius: 30px;
+        border: 1px solid #7F64E9;
+        background: #7F64E9;
+        color: white;
+        margin: 00 auto;
+        padding: 15px 20px;
+        font-size: 16px;
+        line-height: 22px;
+        display: block;
+        transition: all 200ms ease;
+        box-shadow: rgba(80, 84, 182, 0.308) 0px 8px 8px 0;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background: #5e41a7;
+    }
+
+    .text p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    span.spots {
+        font-weight: bold;
+    }
+
+    .button {
+        margin: 40px 0;
+    }
