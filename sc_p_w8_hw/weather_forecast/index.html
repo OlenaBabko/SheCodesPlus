@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <title>weather</title>
+</head>
+<body>
+    <div class="container">
+        <div class="weather-border">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>
+                        <img src = "" alt = "clear" id = "icon"/>
+                        <span class="temperature" id="temperature"></span>
+                        <span class="units">
+                            <a href="#" id="celsius-link" class = "active">°C</a> |
+                            <a href="#" id="fahrenheit-link" >°F</a>
+                        </span>
+                    </h2>
+                    <h1 id="city"></h1>
+                    <h4 id="currentDayTime"></h4>
+                    <h3>
+                        <p><span id = "description" class = "description"></span></p>
+                        <p>Wind: <span id = "wind"></span>m/s</p>
+                        <p>Humidity: <span id = "humidity"></span>%</p>
+                    </h3>
+                </div>
+                <div class="col-sm-6">
+                    <form class = "searchCity" id="searchCity">
+                        <input type="search" placeholder="Enter your city" id="searchCity-input"/>
+                        <div class="break"></div>
+                        <div class = "rowButtons">
+                            <input type="submit" value="Search" class="btn btn-success"/>
+                            <button id = "currentLocationButton" class = "currentLocationButton">Current</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+             <div class = "forecast" id = "forecast">
+                <div class = "row">
+                    <div class = "col-2">
+                        <div class = "forecast_date">Today</div>
+                        <img src = "" alt = "clear" id = "icon"/>
+                        <div class = "forecast_temperature">
+                            <span class = "temperature_min">10°</span>
+                            <span class = "temperature_max">15°</span>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <p class="signature">
+            Coded by <a href="https://github.com/ljolia/weather_forecast"
+            target="_blank">Lambda</a>
+        </p>
+    </div>
+    
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+</body>
+</html>
